@@ -27,6 +27,8 @@ class Programer(models.Model):
 class Purchase(models.Model):
     name = models.CharField(max_length=150)
     address = models.TextField(blank=True, null=True)
+    amount = models.FloatField()
+    email  = models.EmailField()
 
     def __str__(self):
         return self.name

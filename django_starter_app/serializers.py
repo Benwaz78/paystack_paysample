@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Language, Programer, Paradigm
+from .models import Language, Programer, Paradigm, Purchase
 
 
 class LanguageSerializer(serializers.HyperlinkedModelSerializer):
@@ -21,5 +21,8 @@ class ParadigmSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta():
 		model = Paradigm
 		fields = ('id', 'url', 'name')
+
+
+
 
 

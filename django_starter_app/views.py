@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from . models import Language, Paradigm, Programer
+from . models import Language, Paradigm, Programer, Purchase
 from .serializers import LanguageSerializer, ParadigmSerializer, ProgramerSerializer
 from .forms import PurchaseForm
 
